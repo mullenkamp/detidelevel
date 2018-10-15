@@ -13,7 +13,7 @@ datasets = 'datasets'
 version = '1.0.0'
 description = 'Functions to remove tidal signals from surface water levels'
 url = 'https://github.com/mullenkamp/detidelevel'
-keywords = 'tide flow'
+keywords = 'tide level'
 
 # The below code is for readthedocs. To have sphinx/readthedocs interact with
 # the contained package, readthedocs needs to build the package. But the dependencies

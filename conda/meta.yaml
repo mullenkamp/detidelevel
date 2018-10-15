@@ -1,4 +1,4 @@
-{% set name = "detideflow" %}
+{% set name = "detidelevel" %}
 {% set version = "1.0.0" %}
 {% set sha256 = "db89ecfb3227c1fbf74b9071aad61086f172953a558e417f721e01683d655e24" %}
 
@@ -44,10 +44,10 @@ test:
     -detideflow
 
 about:
-  home: https://github.com/mullenkamp/detideflow
+  home: https://github.com/mullenkamp/detidelevel
   license: Apache License 2.0
   license_family: APACHE
-  summary: A Python package to remove tidal signals in flow time series.
+  summary: A Python package to remove tidal signals in water level time series.
   description: ""
   doc_url: ''
   dev_url: ''
