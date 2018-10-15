@@ -7,12 +7,12 @@ import os
 here = os.path.abspath(os.path.dirname(__file__))
 
 # General parameters
-name = 'detideflow'
-main_package = 'detideflow'
+name = 'detidelevel'
+main_package = 'detidelevel'
 datasets = 'datasets'
 version = '1.0.0'
-description = 'Functions to remove tidal signals from flow'
-url = 'https://github.com/mullenkamp/hydrointerp'
+description = 'Functions to remove tidal signals from surface water levels'
+url = 'https://github.com/mullenkamp/detidelevel'
 keywords = 'tide flow'
 
 # The below code is for readthedocs. To have sphinx/readthedocs interact with
