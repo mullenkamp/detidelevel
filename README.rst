@@ -19,6 +19,8 @@ or::
 
 The core dependency is `Pandas <http://pandas.pydata.org/pandas-docs/stable/>`_ and `statsmodels <https://www.statsmodels.org>`_.
 
+If you want to run the plotting functions, you will also need to install plotly.
+
 Usage examples
 --------------
 To do...

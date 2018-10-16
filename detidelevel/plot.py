@@ -4,10 +4,13 @@ Created on Tue Oct 16 10:24:05 2018
 
 @author: michaelek
 """
-import pandas as pd
-import plotly.offline as py
-import plotly.graph_objs as go
 import detidelevel as dtl
+import pandas as pd
+try:
+    import plotly.offline as py
+    import plotly.graph_objs as go
+except:
+    print('install plotly for plot functions to work')
 
 
 def plot_detide(df, quantile, freq=None, interp='pchip', output_path='detide.html', title='De-tiding example', yaxis_label='water level (m)'):
@@ -48,8 +51,8 @@ def plot_detide(df, quantile, freq=None, interp='pchip', output_path='detide.htm
     colors1 = ['rgb(102,194,165)', 'rgb(252,141,98)', 'rgb(141,160,203)']
 
     orig = go.Scattergl(
-        x=df.index,
-        y=df[orig_name],
+        x=df1.index,
+        y=df1[orig_name],
         name = orig_name,
         line = dict(color = colors1[0]),
         opacity = 0.8)

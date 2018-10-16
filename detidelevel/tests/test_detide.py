@@ -41,7 +41,9 @@ roll1.columns = ['smoothed original']
 ######################################
 ### Run detide
 
-det = dtl.plot.plot_detide(roll1, quantile, output_path=output_path)
+det1 = dtl.detide(roll1, quantile)
+
+det2 = dtl.plot.plot_detide(roll1, quantile, output_path=output_path)
 
 
 
