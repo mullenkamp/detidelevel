@@ -1,6 +1,6 @@
 {% set name = "detidelevel" %}
-{% set version = "1.0.4" %}
-{% set sha256 = "1af0d444b2299ab16a0963d7a8fa1a66a0203b17c628d0bd3fe32a685d943298" %}
+{% set version = "1.0.5" %}
+# {% set sha256 = "1af0d444b2299ab16a0963d7a8fa1a66a0203b17c628d0bd3fe32a685d943298" %}
 
 # sha256 is the prefered checksum -- you can get it for a file with:
 #  `openssl sha256 <file name>`.
@@ -17,7 +17,7 @@ source:
   # If getting the source from GitHub remove the line above
   # uncomment the line below and modify as needed
   # url: https://github.com/simplejson/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  # sha256: {{ sha256 }}
 
 build:
   # Uncomment the following line if the package is pure python and the recipe is exactly the same for all platforms.

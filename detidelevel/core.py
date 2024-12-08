@@ -51,7 +51,7 @@ def detide(df, quantile, freq=None, interp='pchip'):
     if 'T' not in freq:
         raise ValueError('freq must be a max of 30T and a min of 1T')
 
-    sea1 = sm.tsa.seasonal_decompose(df1, freq=int(np.round(tide_freq/freq_int)))
+    sea1 = sm.tsa.seasonal_decompose(df1, period=int(np.round(tide_freq/freq_int)))
 
     tsdata2 = df1[sea1.seasonal < sea1.seasonal.quantile(quantile)].dropna().copy()
 
